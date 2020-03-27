@@ -11,14 +11,20 @@ body {
 	width: 100%;
 	clear: both;
 }
-header {
-	background: url(../img/bg_1.jpg) no-repeat center top / cover;
-	height: 100vh;
+.header{
+    background: url(../folder/img/bg_1.jpg);
 }
-.container {
-	width: 930px;
-	margin: 0 auto;
+
+.cont_t {
+
+	font-size: 20px;
+	font-weight: 700;
+    margin-left: 700px;
 }
-.cont{
-    margin-top:100px;
+
+input{
+    padding: 10px;
+}
+form{
+    margin-left:700px; 
 }
