@@ -3,13 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Musify</title>
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/dark.css">
+	<script src="js/script.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
 	<header>
+	<div class="switch">
+    	<input type="checkbox" id="switch-1" class="switch-check">
+    	<label for="switch-1" class="switch-label">
+       		 Опція
+       	<span class="switch-slider switch-slider-on"></span>
+           <span class="switch-slider switch-slider-off"></span>
+    </label>
+     </div>
+
 		<div class="container">
 			<div class="heading clearfix">
 				<div class="logo">Musify</div>
@@ -37,8 +45,9 @@
 				<h1 class="text-two">
 					Спробуйте безкоштовно Premium підписку протягом 90 днів.
 				</h1>
-			<a class="button_3" href="#">Musify Premium</a>
+			<a class="button_3" href="#" onclick="buttonClick(this)">Musify Premium</a>
 		</div>
+		<button onclick="topFunction()" id="Btn" title="Go to top">Наверх</button>
 	</header>
 
 
@@ -140,11 +149,73 @@
     </div>
 	</div>
 	</section>
-	<footer id="contacts">
+	
+  <section id="about">
+		<div class="container about">
+			<div class="titles_1">
+				<div class="title_1">
+					Про нас
+				</div>
+				<hr>
+			</div>
+			<div class="row">
+				<div class="image">
+					<img src="img/equalizer.jpg" alt="">
+				</div>
+				<div class="text animated fadeInRight">
+					<p>Завдяки Musify легко знайти потрібну музику чи підкаст для кожного моменту - на телефоні, комп’ютері, планшеті та ін.</p>
+					<p>На Musify є мільйони треків і епізодів. Отож, чи ви за кермом, тренуєтесь, гуляєте чи відпочиваєте, потрібна музика або подкаст завжди під рукою. Виберіть те, що ви хочете слухати, або нехай Musiify здивує вас.</p>
+					<p>Ви також можете переглядати колекції друзів, художників та знаменитостей або створити радіостанцію та просто посидіти.</p>
+					<p>Підписуйтесь або слухайте безкоштовно</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contacts">
+		<div class="container contacts">
+			<div class="cont_t">
+			<p></p>
+			</div>
+			<form id="section-form" action="index.html" class="form" onsubmit="test(); return false">
+                <table>
+                   <tr>
+                        <td>
+                            <input type="text" name="login" placeholder="Логін*" required id="login" onfocus="myFunction(this)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="second_name" placeholder="Прізвище*" required id="second_name" onfocus="myFunction(this)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="name" placeholder="Ім’я*" required id="name" onfocus="myFunction(this)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="tel" name="tel" id="number" pattern="\+380\[-][0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required placeholder="+380-67-987-25-45" onfocus="myFunction(this)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" name="your_email" required placeholder="Email" onfocus="myFunction(this)">
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <input type="submit" value="Зареєструватись" class="submit" id="submit_1">
+                </div>
+            </form>
+		</div>
+	</section>
+	<footer id="contactss">
 	<div class="right">
 		<p class="left">© 2019 Orchid. Усі права застережено.</p>
 		<p class="autor">Designed by STEVE.</p>
 	</div>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
